@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display: grid;
+            border: 10px solid black;
+            height: 500px;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+            "box1 box1 box2"
+            "box3 box4 box5"
+            "box6 box7 box5";
+            border-radius:10px;
+            gap: 10px;
+            padding: 10px;
+            text-align: center;
+        
+           
+        }
+        .box1
+        {
+            background-color:beige;
+            grid-area:box1;
+            border-radius: 10px;
+            padding: 40px;
+            
+        }
+        .box2{
+            background-color:red;
+            grid-area:box2;
+        }
+        .box3
+        {
+            background-color: aquamarine;
+            grid-area:box3;
+        }
+        .box4
+        {
+            background-color:rosybrown;
+            grid-area:box4;
+        }
+        .box5
+        {
+            background-color: yellow;
+            grid-area:box5;
+        }
+        .box6
+        {
+            background-color: blueviolet;
+            grid-area: box6;
+        }
+        .box7
+        {
+            background-color: chocolate;
+            grid-area: box7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box1">
+            <img src="headset-removebg-preview.png" alt="" width="90px" height="80px">
+        </div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        <div class="box5">box5</div>
+        <div class="box6">box6</div>
+        <div class="box7">box7</div>
+
+
+    </div>
+    
+</body>
+</html>
